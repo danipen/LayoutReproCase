@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="LayoutReproCase.MainWindow"
+        Title="LayoutReproCase">
+  <Grid ColumnDefinitions="* Auto *">
+    <Panel Grid.Column="0" Background="LightYellow">
+      <StackPanel Background="LightGreen" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock
+          FontSize="18"
+          Background="Pink"
+          TextAlignment="Center"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Stretch">You're not signed in</TextBlock>
+        <TextBlock
+          FontSize="13"
+          Background="Pink"
+          TextAlignment="Center"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Stretch"
+          TextWrapping="Wrap">Your session probably ended because there was not activity for this account.</TextBlock>
+      </StackPanel>
+    </Panel>
+    <GridSplitter Grid.Column="1" />
+    <Panel Background="LightCyan" Grid.Column="2" />
+  </Grid>
+</Window>
